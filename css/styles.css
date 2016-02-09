@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@font-face{
+  font-family : "handwriting";
+
+  src : url('Journal/journal.eot');
+  src : url('Journal/journal.eot?') format('eot'),
+        url('Journal/journal.woff') format('woff'),
+        url('Journal/journal.ttf') format('truetype');
+}
+
+@font-face{
+  font-family : "typewriter";
+
+  src : url('Secret-Typewriter/veteran_typewriter.eot');
+  src : url('Secret-Typewriter/veteran_typewriter.eot?') format('eot'),
+        url('Secret-Typewriter/veteran_typewriter.woff') format('woff'),
+        url('Secret-Typewriter/veteran_typewriter.ttf') format('truetype');
+}
+
+body {
+  font  : 21px sans-serif;
+  padding : 2em;
+  margin  : 0;
+  background : #222;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+}
+
+form {
+  position: absolute;
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+}
+
+label {
+  font : .8em "typewriter", sans-serif;
+}
+
+input[type="text"], textarea[id="msg"] {
+  font: .9em "handwriting", serif;
+}
+
+#dear {
+  position: absolute;
+  left: 370px;
+  top: 147px;
+}
+
+#from {
+  position: absolute;
+  left: 340px;
+  top: 197px;
+}
+
+#reply {
+  position: absolute;
+  left: 335px;
+  top: 250px;
+}
+
+#message {
+  position: absolute;
+  left: 50px;
+  top: 80px;
+}
+textarea {
+  width: 330px;
+  height: 250px;
+  left: 110px;
+  top: 55px;
+  border-color: white;
+
+}
+textarea#msg {
+  position: absolute;
+  left: -70px;
+  top: 45px;
+}
+
+
+button {
+  position: absolute;
+  top: 325px;
+  left: 400px;
+  font-weight: bold;
+  font-size: .6em;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: white;
+  border-color: black;
+  transform: rotate(-1.5deg);
+}
